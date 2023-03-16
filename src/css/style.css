@@ -22,12 +22,12 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: 400;}
     padding: 0 15px;
 }
 .cssBayan__title {
-    font-size: 32px;
+    font-size: 2rem;
     margin: 30px 0px;
     font-weight: 700;
 }
 .cssBayan__item {
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
     width: 100%;
     border-top: 1px solid black;
@@ -45,16 +45,19 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: 400;}
     margin: 15px 0;
     font-weight: 600;
 }
-.cssBayan__item-title::after{
+.cssBayan__item-title::after {
     content: "\002b";
-    font-size: 30px;
+    font-size: 1.8rem;
+    transition: 0.5s;
 }
 .cssBayan__item-title:hover:after {
     content: "\00d7";
-    font-size: 30px;
+    font-size: 1.8rem;
+    transition: 0.5s;
 }
 .memes {
     display: none;
+    margin-bottom: 15px;
 }
 .memes img {
     max-width: 400px;
@@ -62,9 +65,37 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: 400;}
 .cssBayan__item:hover .memes  {
     display: block;
     text-align: center;
-}
-.cssBayan__item:focus-within .memes  {
-    display: block;
-    text-align: center;
+    
 }
 
+@media( max-width:820px) {
+    .memes img {
+        max-width: 300px;
+    }
+    .cssBayan__item {
+        font-size: 1.2rem;
+    }
+    .cssBayan__title {
+        font-size: 1.7rem;
+    }
+}
+@media( max-width:320px) {
+    .memes img {
+        max-width: 200px;
+    }
+    .cssBayan__item {
+        font-size: 1rem;
+    }
+    .cssBayan__title {
+        font-size: 1.5rem;
+    }
+    .cssBayan__item-title::after {
+        content: '';
+    }
+    .cssBayan__item-title:hover:after {
+        content: '';
+    }
+    .memes {
+        margin-bottom: 5px;
+    }
+}
