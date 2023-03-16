@@ -23,13 +23,14 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: 400;}
 }
 .cssBayan__title {
     font-size: 32px;
-    margin: 25px 0px;
+    margin: 30px 0px;
     font-weight: 700;
 }
 .cssBayan__item {
     font-size: 24px;
     cursor: pointer;
     width: 100%;
+    border-top: 1px solid black;
 }
 .cssBayan__hover {
     color:blue;
@@ -41,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: 400;}
 .cssBayan__item-title {
     justify-content: space-between;
     display: flex;
-    margin: 25px 0;
+    margin: 15px 0;
     font-weight: 600;
 }
 .cssBayan__item-title::after{
@@ -58,11 +59,11 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: 400;}
 .memes img {
     max-width: 400px;
 }
-.cssBayan__item:hover   .memes  {
+.cssBayan__item:hover .memes  {
     display: block;
     text-align: center;
 }
-.cssBayan__item:focus-within   .memes  {
+.cssBayan__item:focus-within .memes  {
     display: block;
     text-align: center;
 }
