@@ -78,10 +78,16 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: 400;}
     .cssBayan__title {
         font-size: 1.7rem;
     }
+    .cssBayan__item-title:hover:after {
+        font-size: 1.2rem;
+    }
+    .cssBayan__item-title::after {
+        font-size: 1.1rem;
+    }
 }
 @media( max-width:320px) {
     .memes img {
-        max-width: 200px;
+        max-width: 250px;
     }
     .cssBayan__item {
         font-size: 1rem;
